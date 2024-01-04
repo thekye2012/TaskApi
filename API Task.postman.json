@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "07e5585b-c5e6-4123-a0ef-284da7c42d08",
+		"name": "API Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30383465"
+	},
+	"item": [
+		{
+			"name": "Get All Task",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/tareas/public/api/task",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tareas",
+						"public",
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Task",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_user\": 1,\r\n    \"titulo\": \"Completar modulo de autentificacion\",\r\n    \"descripcion\": \"Completar el modulo para el software de tareas para la autentificacion mediante JWT.\",\r\n    \"prioridad\": 1,\r\n    \"fecha_limite\": null,\r\n    \"estado\": \"Completa\",\r\n    \"duracion_estimada\": 120\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/tareas/public/api/task/2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tareas",
+						"public",
+						"api",
+						"task",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_user\": 1,\r\n    \"titulo\": \"Completar modulo de autentificacion\",\r\n    \"descripcion\": \"Completar el modulo para el software de tareas para la autentificacion mediante JWT.\",\r\n    \"prioridad\": 1,\r\n    \"fecha_limite\": null,\r\n    \"estado\": \"Incompleta\",\r\n    \"duracion_estimada\": 120\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/tareas/public/api/task",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tareas",
+						"public",
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/tareas/public/api/task/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tareas",
+						"public",
+						"api",
+						"task",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
