@@ -14,11 +14,11 @@ La documentación de la API está disponible en el archivo `API Task.postman.jso
 
 1. **Obtener Todas las Tareas**
    - Método: `GET`
-   - URL: `localhost/tareas/public/api/task`
+   - URL: `/public/tareas/api/task`
 
 2. **Editar Tarea**
    - Método: `PUT`
-   - URL: `localhost/tareas/public/api/task/{id}`
+   - URL: `/public/tareas/api/task/{id}`
    - Cuerpo:
      ```json
      {
@@ -34,7 +34,7 @@ La documentación de la API está disponible en el archivo `API Task.postman.jso
 
 3. **Crear Tarea**
    - Método: `POST`
-   - URL: `localhost/tareas/public/api/task`
+   - URL: `/public/tareas/api/task`
    - Cuerpo:
      ```json
      {
@@ -50,7 +50,7 @@ La documentación de la API está disponible en el archivo `API Task.postman.jso
 
 4. **Eliminar Tarea**
    - Método: `DELETE`
-   - URL: `localhost/tareas/public/api/task/{id}`
+   - URL: `/public/tareas/api/task/{id}`
 
 ### Autenticación en la API
 
