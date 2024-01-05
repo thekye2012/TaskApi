@@ -56,4 +56,5 @@ La documentación de la API está disponible en el archivo `API Task.postman.jso
 
 Todas las operaciones de la API requieren autenticación. Debes proporcionar las credenciales de usuario en cada solicitud mediante autenticación básica. Asegúrate de incluir las claves `username` y `password` con los valores correspondientes.
 
-¡Disfruta utilizando el sistema de gestión de tareas! Si tienes alguna pregunta o problema, no dudes en abrir un problema en este repositorio.
+Usuario: gerardo
+Contraseña: 123456
